@@ -25,7 +25,7 @@ export function Hero() {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              개발자
+              안녕하세요! 개발자 입니다.
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground">
               AI 개발자 & 프리랜서 강사
