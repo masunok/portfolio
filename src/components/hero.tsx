@@ -19,13 +19,13 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16 relative">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-16 relative w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              신제용
+              개발자
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground">
               AI 개발자 & 프리랜서 강사

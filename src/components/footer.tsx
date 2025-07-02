@@ -26,7 +26,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">신제용</h3>
+            <h3 className="text-xl font-bold">개발자</h3>
             <p className="text-muted-foreground text-sm">
               AI 개발자 & 프리랜서 강사로서 최고의 가치를 제공합니다.
             </p>
@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 신제용. All rights reserved.
+            © 2024 개발자. All rights reserved.
           </p>
         </div>
       </div>

@@ -56,7 +56,7 @@ function ResumeDownloadButton() {
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-20 bg-muted/30 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">소개</h2>
@@ -72,10 +72,10 @@ export function About() {
             <Card>
               <CardHeader className="text-center">
                 <Avatar className="w-32 h-32 mx-auto mb-4">
-                  <AvatarImage src="/placeholder-avatar.jpg" alt="신제용" />
-                  <AvatarFallback className="text-2xl">신제용</AvatarFallback>
+                  <AvatarImage src="/placeholder-avatar.jpg" alt="개발자" />
+                  <AvatarFallback className="text-2xl">개발자</AvatarFallback>
                 </Avatar>
-                <CardTitle className="text-2xl">신제용</CardTitle>
+                <CardTitle className="text-2xl">개발자</CardTitle>
                 <p className="text-muted-foreground">AI 개발자 & 프리랜서 강사</p>
               </CardHeader>
               <CardContent className="space-y-4">
