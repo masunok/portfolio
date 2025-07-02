@@ -35,6 +35,25 @@ const stats = [
   { label: "기술 스택", value: "20+" },
 ];
 
+function ResumeDownloadButton() {
+  const handleDownload = () => {
+    // 실제 이력서 파일이 있다면 해당 경로로 수정
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = '신제용_이력서.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  return (
+    <Button onClick={handleDownload} className="w-full">
+      <Download className="mr-2 h-4 w-4" />
+      이력서 다운로드
+    </Button>
+  );
+}
+
 export function About() {
   return (
     <section id="about" className="py-20 bg-muted/30">
@@ -69,12 +88,7 @@ export function About() {
                   <span className="text-sm">컴퓨터공학 전공</span>
                 </div>
                 <Separator />
-                <Button asChild className="w-full">
-                  <a href="/resume.pdf" download>
-                    <Download className="mr-2 h-4 w-4" />
-                    이력서 다운로드
-                  </a>
-                </Button>
+                <ResumeDownloadButton />
               </CardContent>
             </Card>
           </div>

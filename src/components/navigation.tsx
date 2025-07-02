@@ -24,8 +24,44 @@ export function Navigation() {
     setMounted(true);
   }, []);
 
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   if (!mounted) {
-    return null;
+    return (
+      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <Link href="#home" className="flex items-center space-x-2">
+              <span className="text-xl font-bold">신제용</span>
+            </Link>
+            <div className="hidden md:flex items-center space-x-8">
+              {navigation.map((item) => (
+                <span
+                  key={item.name}
+                  className="text-sm font-medium text-muted-foreground"
+                >
+                  {item.name}
+                </span>
+              ))}
+            </div>
+            <div className="hidden md:flex items-center space-x-4">
+              <div className="w-10 h-10" />
+              <Button asChild>
+                <Link href="#contact">연락하기</Link>
+              </Button>
+            </div>
+            <div className="md:hidden flex items-center space-x-2">
+              <div className="w-10 h-10" />
+              <Button variant="ghost" size="sm">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    );
   }
 
   return (
@@ -54,7 +90,7 @@ export function Navigation() {
           <div className="hidden md:flex items-center space-x-4">
             <Toggle
               pressed={theme === "dark"}
-              onPressedChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onPressedChange={toggleTheme}
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
@@ -68,7 +104,7 @@ export function Navigation() {
           <div className="md:hidden flex items-center space-x-2">
             <Toggle
               pressed={theme === "dark"}
-              onPressedChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onPressedChange={toggleTheme}
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
