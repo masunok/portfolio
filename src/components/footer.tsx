@@ -1,21 +1,11 @@
 import Link from "next/link";
-import { Github, Linkedin, MessageSquare } from "lucide-react";
+import { Github } from "lucide-react";
 
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://www.github.com/masunok/",
     icon: Github,
-  },
-  {
-    name: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
-    icon: Linkedin,
-  },
-  {
-    name: "Velog",
-    url: "https://velog.io/@yourusername",
-    icon: MessageSquare,
   },
 ];
 
@@ -88,7 +78,7 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 개발자. All rights reserved.
+            © 2025 개발자. All rights reserved.
           </p>
         </div>
       </div>

@@ -9,22 +9,22 @@ import { Download, Calendar, MapPin, GraduationCap } from "lucide-react";
 
 const timeline = [
   {
-    year: "2024",
-    title: "AI 에이전트 개발 전문가",
-    description: "LLM 기반 AI 에이전트 개발 및 머신러닝/딥러닝 강의",
-    company: "프리랜서",
-  },
-  {
-    year: "2023",
-    title: "풀스택 개발 교육",
+    year: "2019년 ~ 현재",
+    title: "강의 및 컨설팅",
     description: "백엔드/프론트엔드 개발 강의 및 자료구조/알고리즘 교육",
-    company: "교육기관",
+    company: "",
   },
   {
-    year: "2022",
-    title: "딥러닝 연구 및 개발",
+    year: "2024년 ~ 현재",
+    title: "시니어 개발자",
+    description: "LLM 기반 AI 에이전트 개발 및 머신러닝/딥러닝 강의",
+    company: "",
+  },
+  {
+    year: "2015년 ~ 2020년",
+    title: "AI연구원",
     description: "딥러닝 모델 개발 및 AI 솔루션 구현",
-    company: "기업",
+    company: "",
   },
 ];
 
@@ -72,7 +72,7 @@ export function About() {
             <Card>
               <CardHeader className="text-center">
                 <Avatar className="w-32 h-32 mx-auto mb-4">
-                  <AvatarImage src="/placeholder-avatar.jpg" alt="개발자" />
+                  <AvatarImage src="/마선옥.jpg" alt="개발자" />
                   <AvatarFallback className="text-2xl">개발자</AvatarFallback>
                 </Avatar>
                 <CardTitle className="text-2xl">개발자</CardTitle>
