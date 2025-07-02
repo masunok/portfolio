@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ChevronDown, Download, Mail } from "lucide-react";
+import { ChevronDown, Mail } from "lucide-react";
 import Link from "next/link";
 
 const skills = ["딥러닝", "LLM", "풀스택", "자료구조", "바이브코딩"];

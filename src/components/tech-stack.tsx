@@ -4,15 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
   Brain, 
-  Code, 
   Database, 
   Globe, 
-  Layers, 
-  Zap,
   Cpu,
-  Cloud,
   GitBranch,
-  Shield,
   Server
 } from "lucide-react";
 
